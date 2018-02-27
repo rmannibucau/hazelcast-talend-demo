@@ -27,6 +27,12 @@ public class HazelcastConfiguration implements Serializable {
     private String mapName;
 
     @Option
+    private String keyAttribute;
+
+    @Option
+    private String valueAttribute;
+
+    @Option
     private String executorService = "default";
 
     @Setter(NONE)
